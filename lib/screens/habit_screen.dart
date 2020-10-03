@@ -20,8 +20,6 @@ class _HabitScreenState extends State<HabitScreen> {
       print(
           "$item ${DateFormat('EEEE').format(DateTime(now.year, now.month, item))}");
     }
-    //print(DateFormat('EEEE').format(date));
-    //print(listOfDates);
   }
 
   Widget _buildHabit(index) {
@@ -106,6 +104,7 @@ class _HabitScreenState extends State<HabitScreen> {
               context, MaterialPageRoute(builder: (_) => AddHabitScreen())),
         ),
         appBar: AppBar(
+          elevation: 0,
           backgroundColor: Theme.of(context).backgroundColor,
           title: Text(
             "Habits",

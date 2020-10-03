@@ -6,7 +6,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           primarySwatch: Colors.blue,
-          backgroundColor: Color(272830),
+          backgroundColor: Colors.black12,
           visualDensity: VisualDensity.adaptivePlatformDensity,
           textTheme: TextTheme(headline1: TextStyle(color: Colors.white))),
       home: HabitScreen(),
